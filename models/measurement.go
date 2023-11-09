@@ -4,12 +4,12 @@ package models
 type Measurement struct {
 	ID     						string 		`json:"id" bson:"_id"`						
 	VehicleId  					int 		`json:"vehicleId" bson:"vehicleId"`
-	Ts							int	`json:"ts" bson:"ts"`
+	Ts							int			`json:"ts" bson:"ts"`
 	Temperature					float64 	`json:"temperature" bson:"temperature"`
 	OperatingTime				int 		`json:"operatingtime" bson:"operatingtime"`
 	FuelUsage 					float64 	`json:"fuelusage" bson:"fuelusage"`
 	FrontLinkagePosition 		int			`json:"front_linkage_position" bson:"front_linkage_position"`
-	DrivingSpeed 				int			`json:"drivingspeed" bson:"drivingspeed"`
+	DrivingSpeed 				float64			`json:"drivingspeed" bson:"drivingspeed"`
 	EngineState 				int			`json:"enginestate" bson:"enginestate"`
 	AutopilotSystemState 		int			`json:"autopilotsystemstate" bson:"autopilotsystemstate"`
 	EngineLoad 					float64		`json:"engineload" bson:"engineload"`
